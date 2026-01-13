@@ -1,0 +1,8 @@
+### Create account
+POST http://localhost:8080/api/accounts?accountNumber=ACC001&balance=10000&currency=INR
+
+### Get all accounts
+GET http://localhost:8080/api/accounts
+
+### Get one account
+GET http://localhost:8080/api/accounts/ACC001
