@@ -1,0 +1,11 @@
+1️⃣ Account Entity + Table
+2️⃣ Balance Tracking
+3️⃣ Payment Processing API
+4️⃣ Kafka (later, step-by-step)
+5️⃣ Liquidity calculations
+
+Real-Time Liquidity & Payments Monitoring Platform– Designed and implemented a backend system to track account balances, payment flows, and firm-wide liquidity in real time. 
+Built RESTful APIs using Java Spring Boot for account management, payment initiation, and transaction processing.
+Implemented Apache Kafka to stream transaction events and asynchronously recalculate liquidity metrics.
+Applied idempotency, retry mechanisms, and exception handling to ensure reliable payment processing.
+Modeled relational schemas in PostgreSQL with transactional consistency and optimized queries.
