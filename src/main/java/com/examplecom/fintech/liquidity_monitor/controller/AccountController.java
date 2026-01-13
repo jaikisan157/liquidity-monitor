@@ -17,22 +17,40 @@ public class AccountController {
         this.accountService = accountService;
     }
 
+    // Create account
     @PostMapping
     public Account createAccount(
             @RequestParam String accountNumber,
             @RequestParam BigDecimal balance,
             @RequestParam String currency) {
-
         return accountService.createAccount(accountNumber, balance, currency);
     }
 
+    // Get all accounts
     @GetMapping
     public List<Account> getAllAccounts() {
         return accountService.getAllAccounts();
     }
 
+    // Get one account
     @GetMapping("/{accountNumber}")
     public Account getAccount(@PathVariable String accountNumber) {
         return accountService.getAccountByNumber(accountNumber);
+    }
+
+    // Deposit money
+    @PostMapping("/{accountNumber}/deposit")
+    public Account deposit(
+            @PathVariable String accountNumber,
+            @RequestParam BigDecimal amount) {
+        return accountService.deposit(accountNumber, amount);
+    }
+
+    // Withdraw money
+    @PostMapping("/{accountNumber}/withdraw")
+    public Account withdraw(
+            @PathVariable String accountNumber,
+            @RequestParam BigDecimal amount) {
+        return accountService.withdraw(accountNumber, amount);
     }
 }

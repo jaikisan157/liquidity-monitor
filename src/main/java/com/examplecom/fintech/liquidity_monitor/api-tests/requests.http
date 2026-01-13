@@ -1,8 +1,38 @@
 ### Create account
+### Create account – ACC001
 POST http://localhost:8080/api/accounts?accountNumber=ACC001&balance=10000&currency=INR
+
+### Create account – ACC002
+POST http://localhost:8080/api/accounts?accountNumber=ACC002&balance=25000&currency=INR
+
+### Create account – ACC003
+POST http://localhost:8080/api/accounts?accountNumber=ACC003&balance=5000&currency=USD
+
+### Create account – ACC004
+POST http://localhost:8080/api/accounts?accountNumber=ACC004&balance=120000&currency=EUR
+
+### Create account – ACC005
+POST http://localhost:8080/api/accounts?accountNumber=ACC005&balance=75000&currency=INR
+
+### Create account – ACC006
+POST http://localhost:8080/api/accounts?accountNumber=ACC006&balance=3000&currency=USD
+
+### Create account – ACC007
+POST http://localhost:8080/api/accounts?accountNumber=ACC007&balance=98000&currency=GBP
+
+### Create account – ACC008
+POST http://localhost:8080/api/accounts?accountNumber=ACC008&balance=150000&currency=INR
+
+### Create account – ACC009
+POST http://localhost:8080/api/accounts?accountNumber=ACC009&balance=4200&currency=AUD
+
+### Create account – ACC010
+POST http://localhost:8080/api/accounts?accountNumber=ACC010&balance=67000&currency=CAD
 
 ### Get all accounts
 GET http://localhost:8080/api/accounts
 
 ### Get one account
 GET http://localhost:8080/api/accounts/ACC001
+
+POST http://localhost:8080/api/accounts/ACC001/deposit?amount=5000

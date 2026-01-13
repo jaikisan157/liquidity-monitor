@@ -9,3 +9,45 @@ Built RESTful APIs using Java Spring Boot for account management, payment initia
 Implemented Apache Kafka to stream transaction events and asynchronously recalculate liquidity metrics.
 Applied idempotency, retry mechanisms, and exception handling to ensure reliable payment processing.
 Modeled relational schemas in PostgreSQL with transactional consistency and optimized queries.
+
+PHASE 1 — CORE BACKEND (NOW)
+
+No Kafka yet. No complexity.
+
+You’ll build:
+
+REST APIs
+
+Database entities
+
+Business logic
+
+Balance updates
+
+PHASE 2 — PAYMENTS LOGIC
+
+Payment initiation
+
+Debit / Credit logic
+
+Validation (insufficient funds)
+
+Idempotency (no double payments)
+
+PHASE 3 — REAL-TIME FEEL
+
+Event-driven updates
+
+Liquidity recalculation
+
+(Later) Kafka
+
+PHASE 4 — PRODUCTION QUALITY
+
+Error handling
+
+Logging
+
+Clean architecture
+
+Resume-ready documentation
