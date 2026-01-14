@@ -35,4 +35,11 @@ GET http://localhost:8080/api/accounts
 ### Get one account
 GET http://localhost:8080/api/accounts/ACC001
 
+###
 POST http://localhost:8080/api/accounts/ACC001/deposit?amount=5000
+
+###
+POST http://localhost:8080/api/accounts/ACC001/withdraw?amount=2000
+
+###
+POST http://localhost:8080/api/payments?fromAccount=ACC001&toAccount=ACC002&amount=100&idempotencyKey=PAY-002
